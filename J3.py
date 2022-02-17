@@ -102,7 +102,8 @@ for elm in b:
 print(temp)
 
 def a(stop, *args):
-    pass
+    if len(args) > 0:
+        
 
 
 a(13)
