@@ -1,6 +1,17 @@
 from typing import List, Optional
 from functools import reduce
 
+def _a():
+    print("aaa")
+
+
+def _logarithm():
+    print("logarithm dar jalase 3")
+
+
+def test_a():
+    print("test a in jalaseh 3")
+
 # def sum(a, b):
 #     print(f"a={a}, b={b}, {a} + {b} ={a+b}")
 #     return a + b
@@ -82,9 +93,6 @@ def matrix_mulyiply2(mat1: List[List], mat2: List[List]) -> Optional[List]:
 
 
 messi_session_goals = [80, 80, 80, 32, 34, 54, 54]
-print(list(map(lambda x, y: (3*x, 4*y), [1, 2, 3, 4], [4, 5, 6])))
-
-print(matrix_mulyiply2(matrix1, matrix2))
 
 # tables = [lambda x=x: x*10 for x in range(1, 11)]
 
@@ -99,11 +107,17 @@ for elm in b:
     if a.count(elm) > 1:
         temp.append(-elm)
 
-print(temp)
 
 def a(stop, *args):
     if len(args) > 0:
         
 
 
-a(13)
+if __name__ == "__main__":
+    a(13)
+    print(temp)
+    print(list(map(lambda x, y: (3*x, 4*y), [1, 2, 3, 4], [4, 5, 6])))
+
+    print(matrix_mulyiply2(matrix1, matrix2))
+
+    print("in jalaseh 3: ", __name__)
