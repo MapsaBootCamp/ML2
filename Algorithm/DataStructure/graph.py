@@ -37,6 +37,13 @@ class Graph:
         return str(self.adj_mat)
 
 
+    def is_connected(self) -> bool:
+        pass
+
+    
+    def shortes_path(self, node_a, node_b):
+        pass
+
 g1 = Graph()
 g1.add_nodes("a")
 g1.add_nodes("b")
