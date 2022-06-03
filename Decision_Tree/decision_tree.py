@@ -19,7 +19,7 @@ y = iris_data.target
 X_train , X_test, y_train, y_test = train_test_split(X, y, stratify=iris_df.target, test_size=0.3, random_state=42)
 
 
-dt_classifier = DecisionTreeClassifier()
+dt_classifier = DecisionTreeClassifier(max_leaf_nodes=5)
 
 dt_classifier.fit(X_train, y_train)
 # tree.plot_tree(dt_classifier)
@@ -28,4 +28,4 @@ dot_data = tree.export_graphviz(dt_classifier, out_file=None)
 graph = graphviz.Source(dot_data)
 graph.render("iris")
 
-print(classification_report(y_test, dt_classifier.predict(X_test)))
+print(dt_classifier.score(X_test, y_test))
